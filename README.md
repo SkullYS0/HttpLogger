@@ -12,5 +12,10 @@ Make your own web-logger with HttpListener
 <h3>dbName: "Your DB Name"</h3>
 <h3>dbPort: "3306"</h3>
 </div>
+<div>
+<h1>Bot commands<h1>
+<h2>/ban IP</h2>
+<h2>/unban IP</h2>
+<h2>/start IP</h2></div>
 <h1>For start bot you can use this command: <java -jar HttpListeter.jar (port)></h1>
 <h1>For make your site, put index.html, and etc... to the parent folder</h1>
