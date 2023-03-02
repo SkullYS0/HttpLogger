@@ -6,6 +6,8 @@ Make your own web-logger with HttpListener
 <h3>ownerID: YourID_TG</h3>
 <h3>botUsername: "BotUsername_bot"</h3>
 
+<h3>serverPort: 80</h3>
+
 <h3>dbHost: "Your hostname"</h3>
 <h3>dbUser: "Your username"</h3>
 <h3>dbPassword: "Your user password"</h3>
