@@ -30,6 +30,7 @@ public class Main {
     public static String dbUser = "";
     public static String dbPort = "";
     public static String dbPassword = "";
+    public static int serverPort = 80;
 
 
     public static void main(String[] args) throws Exception {
@@ -57,7 +58,7 @@ public class Main {
         }
         HttpServer server = null;
         if(args.length == 0) {
-            server = HttpServer.create(new InetSocketAddress(8080), 0);
+            server = HttpServer.create(new InetSocketAddress(serverPort), 0);
         }else{
             server = HttpServer.create(new InetSocketAddress(Integer.parseInt(args[0])), 0);
         }
@@ -82,6 +83,7 @@ public class Main {
             dbUser = (String) data.get("dbUser");
             dbPassword = (String) data.get("dbPassword");
             dbPort = (String) data.get("dbPort");
+            serverPort = (int) data.get("serverPort");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
